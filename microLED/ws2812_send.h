@@ -13,6 +13,8 @@
 #define _DELAY_ NOP2             
 #elif F_CPU == 20000000 
 #define _DELAY_ NOP2 NOP2 NOP1
+#elif F_CPU == 32000000 
+#define _DELAY_ NOP2 NOP2 NOP2 NOP1
 #endif
 
 #if defined(ORDER_GRB)
